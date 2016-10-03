@@ -1,0 +1,53 @@
+body {
+   background-color: #76b852;
+   font-family: cursive;
+}
+
+#divstatusbar1, #divstatusbar2, #divstatusbar3 {
+  height:40px;
+  width:530px;
+  border: 1px solid gray;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+select {
+	margin-left: 10px;
+}
+
+
+#statusbar1, #statusbar2, #statusbar3 {
+ display: inline-block;
+  width:0%;
+  height: 100%;
+  background-color: green;
+}
+
+#percentagestatusbar1, #percentagestatusbar2, #percentagestatusbar3 {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 250px;
+}
+
+.header {
+text-transform: capitalize;
+font-weight: bold;
+text-align: center;
+font-size: large;
+padding-left: 40%;
+margin-bottom: 50px;
+}
+
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  top: 100px;
+}

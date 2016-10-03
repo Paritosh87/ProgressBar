@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head><title> Status Bar</title>
+<script type="text/javascript" src="statusbar.js"></script>
+<link rel="stylesheet" type="text/css" href="statusbar.css"/>
+</head>
+<body>
+<div class="form">
+<label class="header"> Progress Bar</label>
+<div id="divstatusbar1">
+<span id="statusbar1">&nbsp;</span>
+<span id="percentagestatusbar1">0%</span>
+</div>
+
+<div id="divstatusbar2">
+<span id="statusbar2">&nbsp;</span>
+<span id="percentagestatusbar2">0%</span>
+</div>
+
+<div id="divstatusbar3">
+<span id="statusbar3">&nbsp;</span>
+<span id="percentagestatusbar3">0%</span>
+</div>
+
+<select id="select">
+<option value="statusbar1">status-1</option>
+<option value="statusbar2">status-2</option>
+<option value="statusbar3">status-3</option>
+</select>
+
+
+<button onclick="Decrease('10')">
+-10
+</button>
+
+<button onclick="Decrease('25')">
+-25
+</button>
+
+<button onclick="Increase('10')">
++10
+</button>
+
+<button onclick="Increase('25')">
++25
+</button>
+</div>
+</body>
+</html>
