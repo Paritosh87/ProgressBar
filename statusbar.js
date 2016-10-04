@@ -6,10 +6,16 @@ function Increase(increment) {
 
 	var parentWidth = document.getElementById('div'+selectedvalue).clientWidth;
 	var childWidth = document.getElementById(selectedvalue).clientWidth;
-	var changedWidth = childWidth/parentWidth * 100 + parseInt(increment) +"%";
+	var changedWidth = childWidth/parentWidth * 100 + parseInt(increment);
 
 	var intChangedWidth = parseInt(changedWidth)+"%";
 
+	if(changedWidth > 100) {
+		document.getElementById(selectedvalue).style.background="red";
+	}
+	else {
+		document.getElementById(selectedvalue).style.background="green";
+	}
 	document.getElementById('percentage'+selectedvalue).innerText = intChangedWidth;
 	document.getElementById(selectedvalue).style.width = intChangedWidth;
 }
@@ -27,11 +33,18 @@ function Decrease(decrement) {
 
 	var parentWidth = document.getElementById('div'+selectedvalue).clientWidth;
 	var childWidth = document.getElementById(selectedvalue).clientWidth;
-	var changedWidth = childWidth/parentWidth * 100 - parseInt(decrement) +"%";
+	var changedWidth = childWidth/parentWidth * 100 - parseInt(decrement);
 
 	var intChangedWidth = parseInt(changedWidth)+"%";
+	
+		if(changedWidth > 100) {
+		document.getElementById(selectedvalue).style.background="red";
+	}
+	else {
+		document.getElementById(selectedvalue).style.background="green";
+	}
 
-	if(changedWidth >= "0%") {
+	if(changedWidth >= 0) {
 		document.getElementById('percentage'+selectedvalue).innerText = intChangedWidth;
 		document.getElementById(selectedvalue).style.width = intChangedWidth;
 	}
