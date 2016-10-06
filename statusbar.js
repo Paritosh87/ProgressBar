@@ -10,7 +10,7 @@ function Increase(increment) {
 
 	var intChangedWidth = parseInt(changedWidth)+"%";
 
-	if(changedWidth > 100) {
+	if(parseInt(changedWidth) > 100) {
 		document.getElementById(selectedvalue).style.background="red";
 	}
 	else {
@@ -37,7 +37,7 @@ function Decrease(decrement) {
 
 	var intChangedWidth = parseInt(changedWidth)+"%";
 	
-		if(changedWidth > 100) {
+		if(parseInt(changedWidth) > 100) {
 		document.getElementById(selectedvalue).style.background="red";
 	}
 	else {
